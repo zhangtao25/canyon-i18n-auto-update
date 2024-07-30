@@ -1,10 +1,7 @@
-import {findPackageJsonFiles,getLatestVersion} from "./helpers.mjs";
 import fs from 'fs';
 import {exec} from 'child_process';
 import { promisify } from 'util';
 const execPromise = promisify(exec);
-// import languages from './languages.json' assert {type: "json"};
-
 /**
  * Language Codes and Names
  * 名称      代码
@@ -40,12 +37,6 @@ const execPromise = promisify(exec);
  */
 
 const languages = [
-    // "auto",
-    // "zh",
-    // "en",
-    // "yue",
-    // "wyw",
-    // "jp",
     "kor",
     "fra",
     "spa",
